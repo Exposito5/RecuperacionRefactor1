@@ -9,30 +9,30 @@ import javax.swing.JOptionPane;
 public class LoVivido {
 
 public static void main(String[] args) {
-String n;
-String e;
+String name;
+String age;
 
-int m;
-int d;
-int h;
-int a;
+int month;
+int day;
+int hour;
+int year;
 
-n = JOptionPane.showInputDialog ("Escriba su nombre: ");
-e = JOptionPane.showInputDialog ("Escriba su edad: ");
+name = JOptionPane.showInputDialog ("Escriba su nombre: ");
+age = JOptionPane.showInputDialog ("Escriba su edad: ");
  
-a = Integer.parseInt (e);
+year = Integer.parseInt (age);
  
-m = (a*12);
-d = (a*365);
-h = (d*24);
+month = (year*12);
+day = (year*365);
+hour = (day*24);
  
- JOptionPane.showMessageDialog(null,  "Meses: "  +m,"Numero de meses vividos de " +n,JOptionPane.INFORMATION_MESSAGE);
+ JOptionPane.showMessageDialog(null,  "Meses: "  +month,"Numero de meses vividos de " +name,JOptionPane.INFORMATION_MESSAGE);
 
 
- JOptionPane.showMessageDialog(null, "Días: " +d,"Numero de días vividos de "+n,JOptionPane.INFORMATION_MESSAGE);
+ JOptionPane.showMessageDialog(null, "Días: " +day,"Numero de días vividos de "+name,JOptionPane.INFORMATION_MESSAGE);
 
 
- JOptionPane.showMessageDialog(null, "Horas: " +h,"Numero de horas vividos de "+n,JOptionPane.INFORMATION_MESSAGE);
+ JOptionPane.showMessageDialog(null, "Horas: " +hour,"Numero de horas vividos de "+name,JOptionPane.INFORMATION_MESSAGE);
 
    System.exit (0);
 
